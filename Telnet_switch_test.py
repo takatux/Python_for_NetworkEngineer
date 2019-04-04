@@ -16,8 +16,8 @@ if password:
     tn.write(password + "\n")
 
 tn.write("vlan database\n")
-tn.write("vlan 10 name student\n")
-tn.write("vlan 20 name lecturer\n")
+for x in range(3,10):
+    tn.write("vlan " + str(x) + " name " + "gedung" + str(x-2) + "\n")
 tn.write("exit\n")
 tn.write("end\n")
 
